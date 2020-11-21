@@ -80,11 +80,11 @@ Test(my_printf, modulo_d, .init = redirect_all_std)
     cr_assert_stdout_eq_str("hello 2 you\n");
 }
 
-// Test(my_printf, modulo_i, .init = redirect_all_std)
-// {
-//     my_printf("hello %i you\n", 2);
-//     cr_assert_stdout_eq_str("hello 2 you\n");
-// }
+Test(my_printf, modulo_i, .init = redirect_all_std)
+{
+    my_printf("hello %i you\n", 2);
+    cr_assert_stdout_eq_str("hello 2 you\n");
+}
 
 // Test(my_printf, modulo_b, .init = redirect_all_std)
 // {

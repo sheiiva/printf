@@ -11,6 +11,7 @@
 static flag_t flags[FLAGS_NUMBER] = {
     {'c', va_putchar},
     {'d', va_putnbr},
+    {'i', va_putnbr},
     {'s', va_putstr}
 };
 
