@@ -45,6 +45,7 @@
         void va_putchar(va_list ap);
         void va_puthexa(va_list ap);
         void va_puthexa_upper(va_list ap);
+        void va_putmodulo(va_list ap);
         void va_putoctal(va_list ap);
         void va_putstr(va_list ap);
         void va_putnbr(va_list ap);

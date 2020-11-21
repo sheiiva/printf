@@ -8,8 +8,6 @@
 #include "cri_func.h"
 #include "my_printf.h"
 
-#include <stdio.h>
-
 Test(my_printf, simple_string, .init=redirect_all_std)
 {
     my_printf("hello world");
@@ -46,11 +44,11 @@ Test(my_printf, with_modulo_random, .init=redirect_all_std)
     cr_assert_stdout_eq_str("hello %r world");
 }
 
-// Test(my_printf, with_double_modulo, .init=redirect_all_std)
-// {
-//     my_printf("hello %% world");
-//     cr_assert_stdout_eq_str("hello % world");
-// }
+Test(my_printf, with_double_modulo, .init=redirect_all_std)
+{
+    my_printf("hello %% world");
+    cr_assert_stdout_eq_str("hello % world");
+}
 
 Test(my_printf, modulo_c_letter, .init=redirect_all_std)
 {
@@ -70,11 +68,11 @@ Test(my_printf, modulo_c_spe_char, .init=redirect_all_std)
     cr_assert_stdout_eq_str("Hollaback !");
 }
 
-// Test(my_printf, multi_modulo, .init=redirect_all_std)
-// {
-//     my_printf("hello to %%%%%c", 'u');
-//     cr_assert_stdout_eq_str("hello to %%u");
-// }
+Test(my_printf, multi_modulo, .init=redirect_all_std)
+{
+    my_printf("hello to %%%%%c", 'u');
+    cr_assert_stdout_eq_str("hello to %%u");
+}
 
 Test(my_printf, modulo_d, .init=redirect_all_std)
 {

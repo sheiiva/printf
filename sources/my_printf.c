@@ -18,7 +18,8 @@ static flag_t flags[FLAGS_NUMBER] = {
     {'s', va_putstr},
     {'S', my_putascii},
     {'x', va_puthexa},
-    {'X', va_puthexa_upper}
+    {'X', va_puthexa_upper},
+    {'%', va_putmodulo}
 };
 
 static void va_printf(char c, va_list ap)
