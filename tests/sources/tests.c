@@ -88,17 +88,17 @@ Test(my_printf, modulo_i, .init=redirect_all_std)
     cr_assert_stdout_eq_str("hello 2 you\n");
 }
 
-// Test(my_printf, modulo_b, .init=redirect_all_std)
-// {
-//     my_printf("Binary of 8 is %b\n", 8);
-//     cr_assert_stdout_eq_str("Binary of 8 is 1000\n");
-// }
+Test(my_printf, modulo_b, .init=redirect_all_std)
+{
+    my_printf("Binary of 8 is %b\n", 8);
+    cr_assert_stdout_eq_str("Binary of 8 is 1000\n");
+}
 
-// Test(my_printf, modulo_b_neg, .init=redirect_all_std)
-// {
-//     my_printf("Binary of -8 is %b\n", -8);
-//     cr_assert_stdout_eq_str("Binary of -8 is -1000\n");
-// }
+Test(my_printf, modulo_b_neg, .init=redirect_all_std)
+{
+    my_printf("Binary of -8 is %b\n", -8);
+    cr_assert_stdout_eq_str("Binary of -8 is -1000\n");
+}
 
 Test(my_printf, modulo_s, .init=redirect_all_std)
 {

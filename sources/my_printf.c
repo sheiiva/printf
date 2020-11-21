@@ -9,6 +9,7 @@
 #include "my_printf.h"
 
 static flag_t flags[FLAGS_NUMBER] = {
+    {'b', va_putbinary},
     {'c', va_putchar},
     {'d', va_putnbr},
     {'i', va_putnbr},
