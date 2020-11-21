@@ -36,5 +36,10 @@ The only system calls allowed are the following ones:
 
 > printf is compiled in the `libmyprintf.a` library and is formated as `int my_printf(const char *format, ...)`
 
+### TESTS:
+
+```
+>> make tests_run
+```
 
 Author [**Corentin COUTRET-ROZET**](https://github.com/sheiiva)
