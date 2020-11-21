@@ -34,7 +34,7 @@ The only system calls allowed are the following ones:
 
 ## USAGE:
 
-> printf is compiled in the `my_printf.a` library and is formated as `int my_printf(const char *format, ...)`
+> printf is compiled in the `libmyprintf.a` library and is formated as `int my_printf(const char *format, ...)`
 
 
 Author [**Corentin COUTRET-ROZET**](https://github.com/sheiiva)
