@@ -16,6 +16,7 @@
     #ifndef VA__H_
         #define VA__H_
         
+        void va_putchar(va_list ap);
         void va_putstr(va_list ap);
 
     #endif /* !VA__H_ */
