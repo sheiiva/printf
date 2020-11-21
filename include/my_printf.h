@@ -39,6 +39,7 @@
     #ifndef VA__H_
         #define VA__H_
 
+        void va_putpointer(va_list ap);
         void va_putbinary(va_list ap);
         void va_putchar(va_list ap);
         void va_puthexa(va_list ap);

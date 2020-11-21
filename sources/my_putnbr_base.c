@@ -7,8 +7,6 @@
 
 #include "my_printf.h"
 
-#include "stdio.h"
-
 static char base_upper(int nb, int ccase)
 {
     if (nb > 9) {

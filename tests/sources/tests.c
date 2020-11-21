@@ -130,11 +130,11 @@ Test(my_printf, modulo_X, .init=redirect_all_std)
     cr_assert_stdout_eq_str("Hexa of 31 is 1F\n");
 }
 
-// Test(my_printf, with_pointer, .init=redirect_all_std)
-// {
-//     my_printf("Pointer on 31 print %p", 31);
-//     cr_assert_stdout_eq_str("Pointer on 31 print Ox1f");
-// }
+Test(my_printf, with_pointer, .init=redirect_all_std)
+{
+    my_printf("Pointer on 31 print %p", 31);
+    cr_assert_stdout_eq_str("Pointer on 31 print Ox1f");
+}
 
 // Test(my_printf, modulo_S, .init=redirect_all_std)
 // {
