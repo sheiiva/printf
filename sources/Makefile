@@ -22,6 +22,7 @@ SRC	=	$(UTILS_PATH)my_realloc.c				\
 		$(UTILS_PATH)my_revstr.c				\
 		$(UTILS_PATH)my_stralloc.c				\
 		$(UTILS_PATH)my_strlen.c				\
+		$(VA_FUNCTION_PATH)va_putascii.c		\
 		$(VA_FUNCTION_PATH)va_putbinary.c		\
 		$(VA_FUNCTION_PATH)va_putpointer.c		\
 		$(VA_FUNCTION_PATH)va_putchar.c			\

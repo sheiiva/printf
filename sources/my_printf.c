@@ -16,6 +16,7 @@ static flag_t flags[FLAGS_NUMBER] = {
     {'o', va_putoctal},
     {'p', va_putpointer},
     {'s', va_putstr},
+    {'S', my_putascii},
     {'x', va_puthexa},
     {'X', va_puthexa_upper}
 };

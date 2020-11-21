@@ -136,8 +136,8 @@ Test(my_printf, with_pointer, .init=redirect_all_std)
     cr_assert_stdout_eq_str("Pointer on 31 print Ox1f");
 }
 
-// Test(my_printf, modulo_S, .init=redirect_all_std)
-// {
-//     my_printf("%S", "\a\0");
-//     cr_assert_stdout_eq_str("\\007");
-// }
+Test(my_printf, modulo_S, .init=redirect_all_std)
+{
+    my_printf("%S", "\a\0");
+    cr_assert_stdout_eq_str("\\007");
+}

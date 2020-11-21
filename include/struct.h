@@ -10,7 +10,7 @@
 
     #include <stdarg.h>
 
-    #define FLAGS_NUMBER 9
+    #define FLAGS_NUMBER 10
 
     typedef struct flag_s {
         char c;
