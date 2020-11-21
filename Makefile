@@ -24,7 +24,7 @@ fclean:
 
 re: fclean all
 
-tests_run: all
+tests_run: re
 	@$(MAKE) -C $(TST_PATH)
 
 .PHONY: all clean fclean re tests_run
