@@ -106,17 +106,17 @@ Test(my_printf, modulo_s, .init=redirect_all_std)
     cr_assert_stdout_eq_str("hello world");
 }
 
-// Test(my_printf, modulo_o_neg, .init=redirect_all_std)
-// {
-//     my_printf("Octal of -8 is %o\n", -8);
-//     cr_assert_stdout_eq_str("Octal of -8 is -10\n");
-// }
+Test(my_printf, modulo_o_neg, .init=redirect_all_std)
+{
+    my_printf("Octal of -8 is %o\n", -8);
+    cr_assert_stdout_eq_str("Octal of -8 is -10\n");
+}
 
-// Test(my_printf, modulo_o, .init=redirect_all_std)
-// {
-//     my_printf("Octal of 8 is %o\n", 8);
-//     cr_assert_stdout_eq_str("Octal of 8 is 10\n");
-// }
+Test(my_printf, modulo_o, .init=redirect_all_std)
+{
+    my_printf("Octal of 8 is %o\n", 8);
+    cr_assert_stdout_eq_str("Octal of 8 is 10\n");
+}
 
 // Test(my_printf, modulo_x, .init=redirect_all_std)
 // {

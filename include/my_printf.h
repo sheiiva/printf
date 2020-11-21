@@ -18,6 +18,7 @@
     // -- BASE
     typedef enum base_s {
         BINARY      = 2,
+        OCTAL       = 8,
         HEXA        = 16,
         HEXAUPPER   = -16
     } base_t;
@@ -40,8 +41,9 @@
 
         void va_putbinary(va_list ap);
         void va_putchar(va_list ap);
-        void va_putnbr(va_list ap);
+        void va_putoctal(va_list ap);
         void va_putstr(va_list ap);
+        void va_putnbr(va_list ap);
 
     #endif /* !VA__H_ */
 
