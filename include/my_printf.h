@@ -8,8 +8,20 @@
 #ifndef MY_PRINTF_H_
     #define MY_PRINTF_H_
 
+    #include <stdarg.h>
+    #include <unistd.h>
+
     void my_printf(char const *s, ...);
 
-    int my_strlen(char const *src);
+    #ifndef VA__H_
+        #define VA__H_
+        
+        void va_putstr(va_list ap);
+
+    #endif /* !VA__H_ */
+
+    void my_putchar(char c, int fd);
+    void my_putstr(char const *str, int fd);
+    int my_strlen(char const *str);
 
 #endif /* !MY_PRINTF_H_ */

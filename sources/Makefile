@@ -13,10 +13,15 @@ ROOT	= ../
 NAME	= $(ROOT)libmyprintf.a
 
 INCLUDE_PATH		= $(ROOT)include
+VA_FUNCTION_PATH	= va_functions/
 
-override CFLAGS 	+=	-W -Wall -Werror -Wextra $(INCLUDE_PATH)
 
-SRC	=	my_printf.c			\
+override CFLAGS 	+=	-W -Wall -Werror -Wextra -I$(INCLUDE_PATH)
+
+SRC	=	$(VA_FUNCTION_PATH)va_putstr.c		\
+		my_printf.c							\
+		my_putchar.c						\
+		my_putstr.c							\
 		my_strlen.c
 
 OBJ	= $(SRC:.c=.o)
