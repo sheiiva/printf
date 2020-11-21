@@ -7,7 +7,9 @@
 
 #include "my_printf.h"
 
-char base_upper(int nb, int ccase)
+#include "stdio.h"
+
+static char base_upper(int nb, int ccase)
 {
     if (nb > 9) {
         if (ccase == LOWCASE)
@@ -29,10 +31,9 @@ static char *convert_str(int nb, base_t base, char *res)
             res[i++] = base_upper((nb % HEXA), UPCASE);
         else
             res[i++] = (nb % base) + '0';
-
         res = my_realloc(res, 1);
         res[my_strlen(res)] = res[i];
-        nb /= base;
+        nb = base == HEXAUPPER ? nb / -base : nb / base;
     }
     return (res);
 }

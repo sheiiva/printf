@@ -118,17 +118,17 @@ Test(my_printf, modulo_o, .init=redirect_all_std)
     cr_assert_stdout_eq_str("Octal of 8 is 10\n");
 }
 
-// Test(my_printf, modulo_x, .init=redirect_all_std)
-// {
-//     my_printf("Hexa of 255 is %x", 255);
-//     cr_assert_stdout_eq_str("Hexa of 255 is ff");
-// }
+Test(my_printf, modulo_x, .init=redirect_all_std)
+{
+    my_printf("Hexa of 255 is %x\n", 255);
+    cr_assert_stdout_eq_str("Hexa of 255 is ff\n");
+}
 
-// Test(my_printf, modulo_X, .init=redirect_all_std)
-// {
-//     my_printf("Hexa of 31 is %X", 31);
-//     cr_assert_stdout_eq_str("Hexa of 31 is 1F");
-// }
+Test(my_printf, modulo_X, .init=redirect_all_std)
+{
+    my_printf("Hexa of 31 is %X\n", 31);
+    cr_assert_stdout_eq_str("Hexa of 31 is 1F\n");
+}
 
 // Test(my_printf, with_pointer, .init=redirect_all_std)
 // {

@@ -14,7 +14,9 @@ static flag_t flags[FLAGS_NUMBER] = {
     {'d', va_putnbr},
     {'i', va_putnbr},
     {'o', va_putoctal},
-    {'s', va_putstr}
+    {'s', va_putstr},
+    {'x', va_puthexa},
+    {'X', va_puthexa_upper}
 };
 
 static void va_printf(char c, va_list ap)

@@ -18,20 +18,22 @@ VA_FUNCTION_PATH	= va_functions/
 
 override CFLAGS 	+=	-W -Wall -Werror -Wextra -I$(INCLUDE_PATH)
 
-SRC	=	$(UTILS_PATH)my_realloc.c			\
-		$(UTILS_PATH)my_revstr.c			\
-		$(UTILS_PATH)my_stralloc.c			\
-		$(UTILS_PATH)my_strlen.c			\
-		$(VA_FUNCTION_PATH)va_putbinary.c	\
-		$(VA_FUNCTION_PATH)va_putchar.c		\
-		$(VA_FUNCTION_PATH)va_putoctal.c	\
-		$(VA_FUNCTION_PATH)va_putnbr.c		\
-		$(VA_FUNCTION_PATH)va_putstr.c		\
-		my_printf.c							\
-		my_putchar.c						\
-		my_putnbr_base.c					\
-		my_putnbr.c							\
-		my_putstr.c							\
+SRC	=	$(UTILS_PATH)my_realloc.c				\
+		$(UTILS_PATH)my_revstr.c				\
+		$(UTILS_PATH)my_stralloc.c				\
+		$(UTILS_PATH)my_strlen.c				\
+		$(VA_FUNCTION_PATH)va_putbinary.c		\
+		$(VA_FUNCTION_PATH)va_putchar.c			\
+		$(VA_FUNCTION_PATH)va_putoctal.c		\
+		$(VA_FUNCTION_PATH)va_putnbr.c			\
+		$(VA_FUNCTION_PATH)va_putstr.c			\
+		$(VA_FUNCTION_PATH)va_puthexa.c			\
+		$(VA_FUNCTION_PATH)va_puthexa_upper.c	\
+		my_printf.c								\
+		my_putchar.c							\
+		my_putnbr_base.c						\
+		my_putnbr.c								\
+		my_putstr.c								\
 
 OBJ	= $(SRC:.c=.o)
 
