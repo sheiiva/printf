@@ -1,14 +1,13 @@
-
 /*
 ** EPITECH PROJECT, 2020
 ** SOURCES // VA_FUNCTIONS
 ** File description:
-** va_putchar.c
+** va_putnbr.c
 */
 
 #include "my_printf.h"
 
-void va_putchar(va_list ap)
+void va_putnbr(va_list ap)
 {
-    my_putchar((char)va_arg(ap, int), STDOUT_FILENO);
+    my_putnbr(va_arg(ap, int));
 }

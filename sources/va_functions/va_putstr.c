@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2020
-** SOURCES
+** SOURCES // VA_FUNCTIONS
 ** File description:
 ** va_print.c
 */

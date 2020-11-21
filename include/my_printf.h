@@ -15,13 +15,15 @@
 
     #ifndef VA__H_
         #define VA__H_
-        
+
         void va_putchar(va_list ap);
+        void va_putnbr(va_list ap);
         void va_putstr(va_list ap);
 
     #endif /* !VA__H_ */
 
     void my_putchar(char c, int fd);
+    void my_putnbr(int nb);
     void my_putstr(char const *str, int fd);
     int my_strlen(char const *str);
 

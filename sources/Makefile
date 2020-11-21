@@ -19,9 +19,11 @@ VA_FUNCTION_PATH	= va_functions/
 override CFLAGS 	+=	-W -Wall -Werror -Wextra -I$(INCLUDE_PATH)
 
 SRC	=	$(VA_FUNCTION_PATH)va_putchar.c		\
+		$(VA_FUNCTION_PATH)va_putnbr.c		\
 		$(VA_FUNCTION_PATH)va_putstr.c		\
 		my_printf.c							\
 		my_putchar.c						\
+		my_putnbr.c							\
 		my_putstr.c							\
 		my_strlen.c
 
