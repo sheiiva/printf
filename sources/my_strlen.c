@@ -1,15 +1,15 @@
 /*
-** EPITECH PROJECT, 2020
-** SOURCES
-** File description:
+** EPITECH PROJECT, 2018
 ** my_strlen.c
+** File description:
+** count cases
 */
 
 int my_strlen(char const *src)
 {
     int i = 0;
 
-    while (src[i])
-        i += 1;
+    while (src[i] != '\0')
+        i = i + 1;
     return (i);
 }

@@ -28,7 +28,7 @@ override LDLIBS     +=	-lcriterion -lmyprintf
 TEST_SRC		=	sources/
 REC_FUNC		=	generic/
 
-SRC 	= 	$(TEST_SRC)t_hello_world.c		\
+SRC 	= 	$(TEST_SRC)tests.c		\
 			$(REC_FUNC)redirect.c
 
 OBJ 	= 	$(SRC:.c=.o)

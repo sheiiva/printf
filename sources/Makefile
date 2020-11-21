@@ -16,7 +16,8 @@ INCLUDE_PATH		= $(ROOT)include
 
 override CFLAGS 	+=	-W -Wall -Werror -Wextra $(INCLUDE_PATH)
 
-SRC	= my_strlen.c
+SRC	=	my_printf.c			\
+		my_strlen.c
 
 OBJ	= $(SRC:.c=.o)
 

@@ -5,9 +5,11 @@
 ** my_printf.h
 */
 
-#ifndef MY_H_
-    #define MY_H_
+#ifndef MY_PRINTF_H_
+    #define MY_PRINTF_H_
+
+    void my_printf(char const *s, ...);
 
     int my_strlen(char const *src);
 
-#endif /* !MY_H_ */
+#endif /* !MY_PRINTF_H_ */
